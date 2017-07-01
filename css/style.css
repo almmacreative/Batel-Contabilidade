@@ -1,0 +1,870 @@
+/* -------- Reset-------- */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+  font-family: 'Lora', serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 100%;
+  color: #081e41;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+textarea {
+  width: 100%;
+}
+
+textarea, input, button {
+  outline: none;
+}
+
+
+/* -------- Fonts -------- */
+
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Montserrat:200,200i,300,300i,400,400i,500,500i,700,700i');
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: 1.1;
+  color: inherit;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: .83em;
+}
+
+h6 {
+  font-size: .67em;
+}
+
+.title {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* -------- Icons --------*/
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'), url(https://example.com/MaterialIcons-Regular.woff) format('woff'), url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+
+/* -------- Grid --------*/
+
+
+/* Desktop */
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.row {
+  box-sizing: border-box;
+}
+
+.row:before, .row:after {
+  content: "";
+  display: table;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  clear: both;
+}
+
+[class*="col-"] {
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  padding: 0.75em;
+}
+
+
+/* -------- Default -------- */
+
+
+/* Header */
+header {
+    height: 49em;
+}
+
+header .global-info {
+    width: 100%;
+    background: #152342;
+    height: 3em;
+    position: fixed;
+    z-index: 300;
+}
+
+header .global-info .container {
+  height: 100%;
+}
+
+header .global-info .info-box {
+  float: left;
+  width: 33.33%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+header .global-info p {
+  margin: 0 auto;
+  color: #fff;
+  font-size: 0.75em;
+  text-transform: uppercase;
+}
+
+header .global-info p span {
+  font-weight: 500;
+  color: #00e8a4;
+  padding: 0 0.5em;
+}
+
+header nav {
+    height: 6em;
+    background: #fff;
+    width: 100%;
+    z-index: 100;
+    position: absolute;
+    top: 3em;
+}
+header .menu.fixed {
+    position: fixed;
+}
+
+header nav .container-fluid {
+  height: 100%;
+}
+
+header nav .logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header nav .logo img {
+  margin: 1.74em;
+}
+
+header nav ul {
+  float: right;
+}
+
+header nav ul li {
+  display: block;
+  margin: 2.5em;
+}
+
+header nav ul li a {
+  font-size: 0.875em;
+  font-family: 'Lora', serif;
+  font-style: italic;
+  text-transform: uppercase;
+  margin: 0 1.5em;
+}
+
+header nav ul li a:hover {
+  color: #eb7f46;
+}
+
+
+/* Full Slider */
+
+.full-slider {
+    height: 46em;
+    position: relative;
+    overflow: hidden;
+    top: 3em;
+}
+
+.full-slider .container-fluid {
+  height: 100%;
+}
+
+.full-slider .control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10%;
+}
+
+.full-slider .control i:hover {
+  cursor: pointer;
+  color: orange;
+}
+
+.full-slider .control i {
+  position: absolute;
+  bottom: 10%;
+  z-index: 2;
+  display: inline-block;
+  color: #765a4d;
+}
+
+.full-slider .control.left {
+  left: 0;
+}
+
+.full-slider .control.left i {
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+.full-slider .control.right {
+  right: 0;
+}
+
+.full-slider .control.right i {
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+.full-slider .bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1
+}
+
+.full-slider .bottom .badge {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #765a4d;
+  border-radius: 100%;
+  margin: 4em 1em;
+}
+
+.full-slider .bottom .badge:hover {
+  border-color: #eb7f46
+}
+
+.full-slider .bottom .badge.active {
+  background-color: #765a4d;
+}
+
+.full-slider .bottom .badge.active:hover {
+  background-color: #eb7f46;
+}
+
+.full-slider .slider {
+  height: 100%;
+  -webkit-transition: opacity 250ms ease-in-out;
+  -moz-transition: opacity 250ms ease-in-out;
+  -o-transition: opacity 250ms ease-in-out;
+  transition: opacity 250ms ease-in-out;
+}
+
+.full-slider .content {
+  max-width: 1024px;
+  width: 80%;
+  height: 50%;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  top: 96px;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+.full-slider .img-01 {
+  height: 100%;
+}
+
+.full-slider .img-01::after {
+  opacity: 0.6;
+  content: "";
+  background-image: url(../img/slider-01.jpg);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+}
+
+.full-slider .img-02 {
+  height: 100%;
+}
+
+.full-slider .img-02::after {
+  opacity: 0.6;
+  content: "";
+  background-image: url(../img/slider-02.jpg);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+}
+
+.full-slider .img-03 {
+  height: 100%;
+}
+
+.full-slider .img-03::after {
+  opacity: 0.6;
+  content: "";
+  background-image: url(../img/slider-03.jpg);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.full-slider h1 {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #eb7f46;
+  font-size: 4em;
+  padding-bottom: 1em;
+}
+
+.full-slider p {
+  font-size: 1.25em;
+  line-height: 1.25em;
+  color: #765a4d;
+}
+
+
+/* Company */
+
+.company {
+  margin-top: 8em;
+  text-align: center;
+}
+
+.company .logo {
+  display: inline-flex;
+  margin-bottom: 3em;
+}
+
+.company h1 {
+  margin-bottom: 1em;
+}
+
+.company h3 {
+  margin-bottom: 4em;
+  line-height: 1.25em;
+}
+
+.company .box-service {
+  background-color: #f7f7f8;
+  padding: 2em;
+  border: 2px dashed;
+  border-color: transparent;
+  -moz-transition: 0.2s ease-out;
+  -ms-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+
+}
+.company .active {
+  border: 2px dashed;
+  border-color: #eb7f46;
+}
+
+.company .box-service:hover {
+  cursor: pointer;
+  border: 2px dashed;
+  border-color: #eb7f46;
+}
+
+.company .box-service .icon {
+  display: inline-flex;
+  color: #eb7f46;
+}
+
+.company .box-service .icon i {
+  font-size: 2em;
+}
+
+.company .box-service h4 {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 1.25em;
+  padding-top: 0.5em;
+  padding-bottom: 0.2em;
+}
+
+.company .box-service a {
+  font-size: 0.75em;
+  color: #eb7f46;
+}
+
+
+/* Services */
+
+.services {
+  background-color: #152342;
+  margin-top: 8em;
+}
+
+.services .container {
+  text-align: center;
+  padding: 8em 0;
+}
+
+.services h1 {
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.services span {
+    font-size: 1em;
+    background: rgba(247, 247, 248, 0.14);
+    color: #fafafa;
+    padding: 1em;
+    display: inline-block;
+    margin: 0.5em;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    text-align: left;
+    line-height: 24px;
+    width: 60%;
+    text-align: center;
+}
+
+.services .contability {
+  display: block;
+}
+.services .fiscal {
+    display: none;
+}
+.services .personal {
+    display: none;
+}
+.services .partner {
+    display: none;
+}
+.services .persons {
+    display: none;
+}
+.services .export {
+    display: none;
+}
+
+
+/* Questions */
+
+.questions {
+    background: #f7f7f8;
+}
+.questions .box-questions, .question-01, .question-02 {
+  padding: 8em 0;
+}
+.questions h1 {
+  color: #152342;
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+
+.questions .box-questions {
+  text-align: center;
+}
+
+.box-questions button {
+    background: #eb7f46;
+    border: none;
+    padding: 1em 2em;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 2em;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    cursor: pointer;
+    font-size: 0.875em;
+}
+.box-questions nav {
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+}
+.box-questions nav a {
+  color: #152342;
+  line-height: 1.5em;
+  display: inline-flex;
+}
+.box-questions nav a:hover {
+    color: #eb7f46;
+    -moz-transition: 0.2s ease-out;
+    -ms-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+}
+.box-questions nav li {
+  margin-bottom: 1em;
+}
+.box-questions nav i {
+    margin-right: 1em;
+}
+
+.question-01, .question-02 {
+    display: none;
+}
+.question-01 h1, .question-02 h1 {
+    text-align: left;
+}
+.question-01 h3, .question-02 h3 {
+  text-align: left;
+  margin-bottom: 1em;
+  font-size: 16px;
+  font-weight: 600;
+}
+.question-01 p, .question-02 p {
+    text-align: left;
+    margin-bottom: 1em;
+    line-height: 2em;
+}
+.question-01 .close, .question-02 .close {
+    padding: 1em;
+    text-transform: uppercase;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    display: inline-flex;
+    line-height: 24px;
+}
+.question-01 .close i, .question-02 .close i {
+  margin-right: 1em;
+}
+
+/* Clients */
+
+.clients {
+  display: none;
+  text-align: center;
+  padding: 6em 0;
+}
+
+.clients h1 {
+  color: #152342;
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+
+.clients img {
+  max-width: 160px;
+}
+
+
+/* Contacts */
+
+.contact {
+    text-align: center;
+    padding: 8em 0;
+}
+
+.contact .row {
+  margin-bottom: 4em;
+}
+
+.contact h1 {
+  color: #152342;
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+
+.contact p i {
+  padding: 8px;
+  vertical-align: middle;
+}
+
+.contact i {
+  color: #eb7f46;
+}
+
+.contact form p {
+    float: left;
+    margin-bottom: 1em;
+    font-family: 'Lora', serif;
+    font-style: italic;
+}
+
+.contact input {
+  border: 1px solid #363c51;
+  width: 84%;
+  padding: 0 2em;
+  height: 44px;
+  font-size: 12px;
+}
+
+.contact textarea {
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid #363c51;
+  width: 95%;
+  padding: 2em;
+  height: 44px;
+  font-size: 12px;
+}
+
+.contact textarea:focus, input:focus {
+  border-color: #eb7f46;
+  color: #eb7f46;
+}
+
+.contact .address {
+  text-align: center;
+}
+
+.contact .address p {
+  text-align: center;
+  line-height: 1.7em;
+  margin-bottom: 2em;
+}
+
+.contact .celphone {
+  text-align: left;
+}
+
+.contact .telphone {
+  text-align: right;
+}
+
+.contact .email {
+  text-align: right;
+}
+
+.contact .button {
+    background: #eb7f46;
+    border: none;
+    /* padding: 1em 2em; */
+    color: #fff;
+    text-transform: uppercase;
+    /* margin-top: 1em; */
+    font-family: 'Lora', serif;
+    font-style: italic;
+    cursor: pointer;
+    font-size: 0.875em;
+    float: left;
+}
+.g-recaptcha {
+    float: right;
+}
+.contact .alert-info {
+    color: red;
+    display: none;
+    font-size: 12px;
+    line-height: 2em;
+}
+.contact .validation {
+    height: 2em;
+    text-align: left;
+}
+.contact .error{
+  border-color: red;
+}
+
+
+/* Google Maps */
+
+#map {
+  width: 100%;
+  height: 400px;
+}
+
+
+/* Footer */
+
+footer {
+  background-color: #152342;
+  color: #ffffff;
+}
+
+footer .box-social {
+  border-bottom: 1px solid #555a6c;
+  padding: 0.7em 0;
+}
+
+footer .social {
+  float: right;
+}
+
+footer .social a {
+  display: inline-block;
+  padding: 0 1em;
+}
+
+footer .social img {
+  width: 16px;
+  vertical-align: middle;
+}
+
+footer ul {
+  text-align: center;
+}
+
+footer nav ul li {
+  display: inline-block;
+  margin: 2em 1em;
+}
+
+footer nav ul li a {
+  margin: 0 1em;
+  font-family: 'Lora', serif;
+  font-style: italic;
+}
+
+footer .box-assignature {
+  background-color: rgba(0, 0, 0, 0.19);
+  padding: 0.7em 0;
+}
+
+footer .credits .left {
+  float: left;
+  font-size: 0.875em;
+}
+
+footer .credits .right {
+  float: right;
+  font-size: 0.875em;
+}
+
+footer .credits .right a {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+..
