@@ -77,7 +77,7 @@ $(window).scroll(function() {
 	var scroll = $(window).scrollTop();
 
 	if (scroll >= 600) {
-    $('.menu')slideDown('fixed');
+		$(".menu").addClass('fixed');
 	} else {
 		$(".menu").removeClass('fixed');
 	}
